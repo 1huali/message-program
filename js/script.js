@@ -6,7 +6,7 @@ let throwButton = document.getElementById("throwButton");
 let typedMessage = document.getElementById("messageField");
 
 let autoMsgContainer = document.getElementById("autoMsg-container");
-let rdmTimer=1000;
+let rdmTimer=100;
 let messageReceived = false;
 let openBottleButton = document.getElementById("openBottleButton");
 
@@ -14,15 +14,21 @@ let opened= false;
 let messageDisplayBox = document.getElementById("messageDisplayBox");
 // let randomMessage = messages[Math.floor(Math.random()*messages.length)];
 let clicks=0;
+let msgArrayIndex = messages.length;
 
 //at throw click, the value of the input field will be stored into the messages array
 throwButton.addEventListener("click", function () {
     message = typedMessage.value;
     messages.push(message);
+    // console.log(messages.length);
+
+    if (messages.length === 2){
+    setTimeout(messageAlert, rdmTimer);
+    }
+    
+
 });
 
-//randomized time to receive message
-setTimeout(messageAlert, rdmTimer);
 
 function messageAlert (){
     console.log('u got a msg!');
@@ -38,7 +44,7 @@ openBottleButton.addEventListener("click", function() {
     setTimeout(msgTimer, 1000);
 
     if (opened === true && clicks===2){
-        console.log("cannot open twice!!")
+        console.log(clicks)
         clicks = 0;
     }
 
@@ -47,7 +53,7 @@ openBottleButton.addEventListener("click", function() {
 function msgTimer(){
 
     opened = false;
-    console.log(opened);
+    // console.log(opened);
 
 }
 
@@ -55,7 +61,7 @@ function displayMessage (){
 
     let randomMessage = messages[Math.floor(Math.random()*messages.length)];
     messageDisplayBox.innerHTML = randomMessage;
-    console.log(messages);
+    // console.log(messages);
 
 }
 
