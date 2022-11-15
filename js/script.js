@@ -1,4 +1,5 @@
 "use strict";
+$(document).ready (function(){
 
 let message;
 let messages=[];
@@ -65,4 +66,36 @@ function displayMessage (){
 
 }
 
+$("#insertPHP").submit(function(event) {
+    //stop submit the form, we will post it manually. PREVENT THE DEFAULT behaviour ...
+   event.preventDefault();
+  console.log("button clicked");
+  let data =$('#insertPHP').serializeArray();
+  /*for console log */
+  for (let valuePairs of data.entries()) {
+    console.log(valuePairs[0]+ ', ' + valuePairs[1]);
+  }
+
+  // P3
+      $.ajax({
+        type: "GET",
+         url: "index.php",
+         data: data,
+         dataType: "text", /*response will be text */
+         cache: false,
+         timeout: 600000,
+         success: function (response) {
+           //reponse is a STRING (not a JavaScript object -> so we need to convert)
+              console.log("we had success!");
+              console.log(response);
+              //reset the form
+              $('#insertPHP')[0].reset();
+        },
+        error:function(){
+       console.log("error occurred");
+     }
+   });
+});
+
+});
 
