@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Awakening";
+    src: url("../assets/fonts/TLOZ-Links-Awakening.ttf");
+  }
+
+  body {
+    font-family: "Awakening";
+    font-size: 48px;
+  }
+
+
 #theSea{
 
     stroke: black;
@@ -6,9 +17,44 @@
 }
 
 #openBottleButton{
+    font-family: "Awakening";
+    font-size: 24px;
     display: none;
+    text-align: center;
+    color: lavender;
+    background-color: #12102b;
+    padding: 2%;
+    margin: 2%;
+    width: auto;
+    height: auto;
+    margin-left: 25%;
 }
 
+#throwButton {
+    font-family: "Awakening";
+    font-size: 48px;
+    text-align: center;
+  color: lavender;
+  background-color: #12102b;
+  padding: 2%;
+  margin: 2%;
+  width: 20%;
+  height: auto;
+  margin-left: 25%;
+}
+
+#messageField {
+    font-family: "Awakening";
+    font-size: 24px;
+  
+  color: white;
+  background-color: #12102b;
+  padding: 2%;
+  margin: 2%;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+}
 
 /* <!-- Code from W3Schools -->
 <!-- https://www.w3schools.com/howto/howto_css_fullscreen_video.asp --> */

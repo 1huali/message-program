@@ -34,21 +34,18 @@ exit;
 
   <body>
     <div id="seaContainer">
-      <div id="theSea">INSERT SEA HERE 
+      <div id="theSea">
         <br>
-        <span id="messageDisplayBox">MSG</span> </div>
+        <span id="messageDisplayBox">[message box]</span> </div>
       </div>
     
-    <div id="autoMsg-container">0 msg @sea!</div>
-    <input id="openBottleButton" type="button" value="Open">
+    <div id="autoMsg-container">[0 msg at sea]</div>
+    <input id="openBottleButton" type="button" value="You have one message! Click to open">
 <br><br><br><br>
-<<<<<<< Updated upstream:index.php
 <form id = "insertPHP">
-      <input id="messageField" type="text" name = "a_message"><input id="throwButton" type="submit" value="throw">
-    </form>
 
-=======
-      <input id="messageField" type="text"><input id="throwButton" type="button" value="throw">
+      <input id="messageField" type="text"><input id="throwButton" type="submit" value="throw">
+    </form>
 
       <!-- Bubbles -->
       <!-- Code from Mark Bowley -->
@@ -73,7 +70,6 @@ exit;
     <source src="assets/images/VidBackground.mp4" type="video/mp4">
   </video>
       
->>>>>>> Stashed changes:index.html
     <!-- My script(s) -->
     <script src="js/script.js"></script>
 
