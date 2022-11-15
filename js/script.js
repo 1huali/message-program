@@ -7,7 +7,7 @@ let throwButton = document.getElementById("throwButton");
 let typedMessage = document.getElementById("messageField");
 
 let autoMsgContainer = document.getElementById("autoMsg-container");
-let rdmTimer=100;
+let rdmTimer=1500;
 let messageReceived = false;
 let openBottleButton = document.getElementById("openBottleButton");
 
@@ -21,7 +21,7 @@ let msgArrayIndex = messages.length;
 throwButton.addEventListener("click", function () {
     message = typedMessage.value;
     messages.push(message);
-    // console.log(messages.length);
+    console.log(messages.length);
 
     if (messages.length === 2){
     setTimeout(messageAlert, rdmTimer);
@@ -42,7 +42,7 @@ openBottleButton.addEventListener("click", function() {
     clicks++;
     opened = true;
     displayMessage();
-    setTimeout(msgTimer, 1000);
+    setTimeout(msgTimer, 15000);
 
     if (opened === true && clicks===2){
         console.log(clicks)
