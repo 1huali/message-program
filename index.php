@@ -42,10 +42,38 @@ exit;
     <div id="autoMsg-container">0 msg @sea!</div>
     <input id="openBottleButton" type="button" value="Open">
 <br><br><br><br>
+<<<<<<< Updated upstream:index.php
 <form id = "insertPHP">
       <input id="messageField" type="text" name = "a_message"><input id="throwButton" type="submit" value="throw">
     </form>
 
+=======
+      <input id="messageField" type="text"><input id="throwButton" type="button" value="throw">
+
+      <!-- Bubbles -->
+      <!-- Code from Mark Bowley -->
+      <!-- https://codepen.io/Mark_Bowley/pen/PozwyP -->
+      <div id="background-wrap">
+        <div class="bubble x1"> <img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x2"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x3"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x4"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x5"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x6"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x7"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x8"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x9"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+        <div class="bubble x10"><img src="assets/images/Bubble.gif" alt="bubble"></div>
+    </div>
+
+        <!-- Video Background -->
+  <!-- Tutorial from W3Schools -->
+  <!-- https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+  <video autoplay muted loop class="backgroundVideo">
+    <source src="assets/images/VidBackground.mp4" type="video/mp4">
+  </video>
+      
+>>>>>>> Stashed changes:index.html
     <!-- My script(s) -->
     <script src="js/script.js"></script>
 
